@@ -1,0 +1,9 @@
+C:\Martijn\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Magicka.resources
+C:\Martijn\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Martijn\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Martijn\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\Magicka cast bar.exe.config
+C:\Martijn\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\Magicka cast bar.exe
+C:\Martijn\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\Magicka cast bar.pdb
+C:\Martijn\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Martijn\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\Magicka cast bar.exe
+C:\Martijn\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\Magicka cast bar.pdb

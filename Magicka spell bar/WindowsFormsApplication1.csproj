@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1256DB9F-6305-4517-A5D1-326BA49D5A92}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>Magicka cast bar</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>magicka-icon-100035273-large.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Magicka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magicka.Designer.cs">
+      <DependentUpon>Magicka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Magicka.resx">
+      <DependentUpon>Magicka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32px-Element_cold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32px-Element_earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32px-Element_fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32px-Element_lightning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32px-Element_water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33px-Element_arcane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33px-Element_ice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33px-Element_life.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33px-Element_shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33px-Element_steam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgres.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_teleport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Chain_lightning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-CTD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Levitation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_blizzard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_charm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_conflagration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_Confuse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_corporealize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_elemental.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_fear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_grease.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_haste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_invisibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_meteorshower_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_nullify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_raisedead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_revive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_summondeath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_summonphoenix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_teleport1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_thunderbolt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_thunderstorm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_time_warp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_tornado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Magick_vortex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Popps_Party_Plasma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Portal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160px-Tractor_Pull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="magicka-icon-100035273-large.ico" />
+    <Content Include="magicka-icon.ico" />
+    <None Include="Resources\FEZ-04-512.png" />
+    <None Include="Resources\sword1.png" />
+    <None Include="Resources\normal.png" />
+    <None Include="Resources\sword.png" />
+    <None Include="Resources\self.png" />
+    <None Include="Resources\normal.jpg" />
+    <None Include="Resources\aoe.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
