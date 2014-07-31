@@ -478,14 +478,14 @@ namespace WindowsFormsApplication1
 
         private void Borderbt_Click(object sender, EventArgs e)
         {
-            if (Magicka.ActiveForm.FormBorderStyle == FormBorderStyle.FixedToolWindow)
+            if (Magicka.ActiveForm.FormBorderStyle == FormBorderStyle.FixedSingle)
             {
                 Magicka.ActiveForm.FormBorderStyle = FormBorderStyle.None;
                 Borderbt.BackColor = Color.LightSteelBlue;
             }
             else
             {
-                Magicka.ActiveForm.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+                Magicka.ActiveForm.FormBorderStyle = FormBorderStyle.FixedSingle;
                 Borderbt.BackColor = Color.White;
             }
             Focusbt.Focus();

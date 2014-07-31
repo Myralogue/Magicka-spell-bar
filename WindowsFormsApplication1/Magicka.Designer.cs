@@ -662,8 +662,9 @@
             this.Controls.Add(this.r4O1);
             this.Controls.Add(this.r5O1);
             this.Controls.Add(this.NextSpellType);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Magicka";
             this.Text = "Magicka cast bar";
             this.Load += new System.EventHandler(this.Form1_Load);
